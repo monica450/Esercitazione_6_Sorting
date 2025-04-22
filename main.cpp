@@ -51,7 +51,7 @@ double averageTimeMS(vector<double>& v, const unsigned int & num)
         std::chrono::steady_clock::time_point t_begin = std::chrono::steady_clock::now();
 
 
-        SortLibrary::MergeSort(v);
+        SortLibrary::HeapSort(v);
 
 
         std::chrono::steady_clock::time_point t_end = std::chrono::steady_clock::now();
@@ -93,7 +93,7 @@ int main(int argc, char ** argv)
 
     cout << "Average time using BubbleSort in ns: " << averageTimeBS(v, num) << endl;
 
-    cout << "Average time using MergeSort in ns: " << averageTimeMS(v, num) << endl;
+    cout << "Average time using HeapSort in ns: " << averageTimeMS(v, num) << endl;
 
     cout << endl;
 
@@ -110,7 +110,7 @@ int main(int argc, char ** argv)
 
     cout << "Average time using BubbleSort in ns: " << averageTimeBS(v, num) << endl;
 
-    cout << "Average time using MergeSort in ns: " << averageTimeMS(v, num) << endl;
+    cout << "Average time using HeapSort in ns: " << averageTimeMS(v, num) << endl;
 
     cout << endl;
 
@@ -129,7 +129,7 @@ int main(int argc, char ** argv)
 
     cout << "Average time using BubbleSort in ns: " << averageTimeBS(w, small_n) << endl;
 
-    cout << "Average time using MergeSort in ns: " << averageTimeMS(w, small_n) << endl;
+    cout << "Average time using HeapSort in ns: " << averageTimeMS(w, small_n) << endl;
 
     cout << endl;
 
@@ -156,7 +156,7 @@ int main(int argc, char ** argv)
 
     cout << "Average time using BubbleSort in ns: " << averageTimeBS(v, num) << endl;
 
-    cout << "Average time using MergeSort in ns: " << averageTimeMS(v, num) << endl;
+    cout << "Average time using HeapSort in ns: " << averageTimeMS(v, num) << endl;
 
     cout << endl;
 
