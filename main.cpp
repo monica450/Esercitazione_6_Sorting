@@ -73,7 +73,15 @@ double averageTimeMS(vector<double>& v, const unsigned int & num)
 int main(int argc, char ** argv)
 {
     unsigned int num = 10;
-    unsigned int n = stoi(argv[1]);
+    unsigned int n;
+if(argc >=2){
+   n=stoi(argv[1]);
+
+}
+else{
+ cout<<"errore, utilizza un valore di default"<<endl;
+ n=10;
+}
     vector<double> v(n);
 
     // ****************************************************************************************************************
