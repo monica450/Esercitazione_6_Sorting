@@ -8,7 +8,7 @@
 
 namespace SortLibrary {
 
-TEST(TestSorting, TestBubbleSort)
+TEST(TestSorting, TestSelectionSort)
 {
     std::vector<int> v = {9, 13, 5, 10, 2, 7, 9, 4, 6, 12};
     SelectionSort<int>(v);
@@ -16,7 +16,7 @@ TEST(TestSorting, TestBubbleSort)
     EXPECT_EQ(v, sortedV);
 }
 
-TEST(TestSorting, TestHeapSort)
+TEST(TestSorting, TestInsertionSort)
 {
     std::vector<int> v = {9, 13, 5, 10, 2, 7, 9, 4, 6, 12};
     InsertionSort<int>(v);

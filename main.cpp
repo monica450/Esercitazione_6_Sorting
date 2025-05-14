@@ -83,6 +83,14 @@ int main(int argc, char ** argv)
 
     iota(v.begin(),v.end(), 0);
 
+
+    /*
+    for(unsigned int i = 0; i < n; i++)
+        cout << v[i] << " ";
+    cout << endl;
+    cout << n << endl;*/
+
+
     cout << "Average time using BubbleSort in ns: " << averageTimeBS(v, num) << endl;
 
     cout << "Average time using HeapSort in ns: " << averageTimeMS(v, num) << endl;
@@ -157,3 +165,4 @@ int main(int argc, char ** argv)
 
     return 0;
 }
+
